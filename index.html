@@ -1,115 +1,57 @@
 <!doctype html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-    <title>DS4200 Web Dev Tutorial</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome | Summit Stash</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="interactivity.js"></script>
-    <div id="header" class="header">
-        <a href="./index.html" class="container clickable" id="account-container">
-            <img src="noun_Hiking_4185384.svg" width="50px">
-            <div id="name-container">Your name here!</div>
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <img src="noun_Hiking_4185384.svg" alt="Hiking icon">
+            <span>Alyssa Buraks</span>
         </a>
-        <div class="container" id="title-container">
-            <h2>DS4200 Web Dev Tutorial!</h2>
-        </div>
-        <div class="container" id="pages-container">
-            <a class="pages-btn clickable" href="https://www.google.com">
-                Google
-            </a>
-            <a class="pages-btn clickable" href="https://www.w3schools.com/html/">
-                w3schools
-            </a>
-            <a class="pages-btn clickable" href="./exploration.html">
-                Exploration page
-            </a>
-        </div>
-    </div>
-    <div class="container body-container">
-        <div class="container content-container">
-            <div class="container content-title">
-                <h3>Table content below!</h3>
-            </div>
-            <div class="container content-body">
-                <table id="recordsTable">
-                    <thead>
-                        <tr>
-                            <th>Customer</th>
-                            <th>Purchase Date</th>
-                            <th class="no-right-border">Purchase Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="67576">
-                            <td>Alice</td>
-                            <td>9/5/2026</td>
-                            <td class="no-right-border">$57.00</td>
-                        </tr>
-                        <tr id="18400">
-                            <td>Bob</td>
-                            <td>9/15/2026</td>
-                            <td class="no-right-border">$8.29</td>
-                        </tr>
-                        <tr id="42144">
-                            <td>Charlie</td>
-                            <td>5/30/2026</td>
-                            <td class="no-right-border">$92.10</td>
-                        </tr>
-                        <tr id="48765">
-                            <td>Diana</td>
-                            <td>4/1/2026</td>
-                            <td class="no-right-border">$27.37</td>
-                        </tr>
-                        <tr id="33156">
-                            <td>Edith</td>
-                            <td>10/14/2026</td>
-                            <td class="no-right-border">$58.13</td>
-                        </tr>
-                        <tr id="72226">
-                            <td class="no-bottom-border">Frank</td>
-                            <td class="no-bottom-border">9/29/2025</td>
-                            <td class="no-bottom-border no-right-border">$31.28</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="container content-container">
-            <div class="container content-title">
-                <h3>Control table content below!</h3>
-            </div>
-            <div class="container content-body" style="flex-direction: column;">
-                <p style="margin: 10px; text-align: center; height: 100px;">To manipulate the table on the left, press one of the following buttons. Doing so will oranize the table or highlight//drop an element from the table.</p>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="sort('Name',true);">Sort by Name!</button>
-                    <button class="ctrl-btn" onmousedown="sort('Date',true);">Sort by Date!</button>
-                    <button class="ctrl-btn" onmousedown="sort('Amount',true);">Sort by Amount!</button> 
-                </div>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Name',true);">Highlight by Earliest Name!</button>
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Date',true);">Highlight by Earliest Date!</button>
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Amount',true);">Highlight by Lowest Amount!</button> 
-                </div>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="dropLowest('Name',true);">Drop by Latest Name!</button>
-                    <button class="ctrl-btn" onmousedown="dropLowest('Date',true);">Drop by Latest Date!</button>
-                    <button class="ctrl-btn" onmousedown="dropLowest('Amount',true);">Drop by Highest Amount!</button> 
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="footer" class="footer">
-        <div>
-            Tutorial started on October 29, 2026!
-        </div>
-    </div>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="hikes.html">My Hikes</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to My Hiking Website</h1>
+        <img class="hero-img" src="noun_Hiking_4185384.svg" alt="Illustration of a hiker">
+
+        <p>
+            Hi, I'm Alyssa, a student at Northeastern University studying computer science & business.
+            When I'm not doing school work, you can usually find me outside in the mountains. Hiking has always 
+            been a passion of mine, but over time it became one of the biggest parts of who I 
+            am. There is something about reaching a summit after a long climb that makes every other challenge 
+            feel more manageable.
+        </p>
+        <p>
+            I grew up exploring local woods and parks outside of Philly, but living near Boston has given me the
+            chance to discover the White Mountains. I love the variety the northeast offers. 
+        </p>
+        <p>
+            I built this website to share my favorite hikes and adventures. As a data science student, 
+            I also like to track my hikes and look for patterns, like how elevation gain compares across the
+            trails I've done. You can see an interactive D3 visualization of that on the
+            <a href="hikes.html">My Hikes</a> page. Feel free to look around, and if you have a
+            trail recommendation, I would love to hear it. Contact details are at the bottom
+            of the page.
+        </p>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: <a href="mailto:buraks.a@northeastern.edu">buraks.a@northeastern.edu</a></li>
+                <li>GitHub: <a href="https://github.com/alyburaks">github.com/alyburaks</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/alyssa-buraks">linkedin.com/in/alyssa-buraks</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>&copy; 2026 Alyssa Buraks &middot; Built for DS4200</footer>
 </body>
 </html>
