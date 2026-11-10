@@ -76,11 +76,12 @@ main {
 
 .hero-img {
     display: block;
-    width: 220px;
-    max-width: 100%;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center 35%;
     margin: 20px auto;
-    padding: 16px;
-    background-color: var(--sand);
+    border: 6px solid var(--sand);
     border-radius: 50%;
 }
 
